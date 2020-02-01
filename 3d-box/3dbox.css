@@ -1,0 +1,98 @@
+/* CSS Document */
+
+
+/*3d box Start*/
+
+#main {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    perspective: 980px;
+    position: relative;
+}
+
+#Box {
+    width: 200px;
+    animation: rotate 40s linear infinite;
+    transform-style: preserve-3d;
+}
+
+#Box:hover {
+    animation-play-state: paused;
+}
+
+#Box div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    color: white;
+    box-sizing: border-box;
+}
+
+#front {
+    transform: translateZ(100px);
+    background-color: rgba(0, 0, 0, 0.91);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    font-size: 24px;
+    color: aliceblue;
+    padding: 0 4px;
+}
+
+#back {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: rgba(0, 0, 0, 0.91);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#left {
+    transform: rotateY(-90deg)translateX(-100px);
+    transform-origin: left;
+    background-color: rgba(0, 0, 0, 0.91);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#right {
+    transform: rotateY(90deg)translateX(100px);
+    transform-origin: right;
+    background-color: rgba(0, 0, 0, 0.91);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top;
+    background: black;
+}
+
+#bottom {
+    transform: rotateX(90deg)translateY(100px);
+    transform-origin: bottom;
+    background: #101010;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+
+
+/* 3d box end*/

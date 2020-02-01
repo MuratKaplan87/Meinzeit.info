@@ -1,0 +1,62 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    #logo:hover {
+        transform: rotate(360deg);
+    }
+    /* navlink*/
+    
+    .nav-link {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-size: large;
+        transition: all 1s ease;
+    }
+    
+    .nav-link:hover {
+        background-color: white;
+        color: #a61313;
+    }
+    /*mobil btn*/
+    
+    #menubtn {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #menubtn:hover {
+        top: 10%;
+    }
+    /* mobil menu*/
+    
+    #mobli {
+        font-size: x-large;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        z-index: 999;
+    }
+    
+    #mobli a {
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    
+    #mobli a:hover {
+        background-color: #a61313;
+        color: white;
+    }

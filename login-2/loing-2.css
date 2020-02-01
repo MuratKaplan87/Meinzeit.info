@@ -1,0 +1,31 @@
+body {
+    background: url(grid.jpg);
+    background-repeat: round;
+}
+
+* {
+    transition: all 1s ease;
+}
+
+#formBox {
+    background-color: rgba(10, 12, 14, 0.705);
+    border-radius: 15px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    background-color: transparent!important;
+    outline: none!important;
+    border: none!important;
+    border-bottom: 2px solid white!important;
+}
+
+input:focus {
+    transition: all 1s ease-in-out;
+    background-color: rgba(240, 234, 224, 0.897)!important;
+}

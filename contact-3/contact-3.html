@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contact-3.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <title>Meinzeit-Contact-3</title>
+</head>
+
+<body style="background-color: crimson;">
+    <div class=" container-fluid rst ">
+
+        <div class="row  justify-content-center  ">
+
+            <div class=" col-8 col-sm-6 col-md-6 col-lg-4 text-center ">
+                <h3 class=" text-light ">Kontakt Form</h3>
+                <form action="" id="kontaktform" class=" form-group w-100 py-2 text-center">
+                    <label for="name" class="h5 text-light"> Name *</label>
+                    <input type="text" name="name" id="name" required> <br>
+                    <label for="nachname" class="h5 text-light"> Nach Name *</label>
+                    <input type="text" name="nachname" id="nachname" required><br>
+                    <label for="email" class="h5 text-light"> E-mail *</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="mesaj" class="h5 text-light"> Nachrihten *</label>
+                    <textarea name="mesaj" id="mesaj" class="mb-2" required></textarea><br>
+
+
+                    <button type="reset" class="btn btn-outline-light mx-2" id="clear"> <h6>Clear</h6> </button>
+                    <button type="submit" class="btn btn-outline-light " id="senden"> <h6>Senden</h6> </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(function() {
+            $("*").css({
+                opacity: "1",
+                transition: "all 1s ease"
+            })
+
+
+
+        })
+    </script>
+</body>
+
+</html>
